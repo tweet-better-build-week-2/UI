@@ -1,8 +1,9 @@
 let navbase = document.querySelector("body > div");
 let navOpen = document.querySelector(".home-icon");
-navbase.addEventListener("click", this.opendrawer);
-console.log(navOpen);
+let drawer = document.querySelector(".drawer");
 
 opendrawer = () => {
-  console.log("open");
+  drawer.className =
+    drawer.className === "drawerOpen" ? "drawer" : "drawerOpen";
 };
+navOpen.addEventListener("click", this.opendrawer);
