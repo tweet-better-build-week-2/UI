@@ -39,6 +39,7 @@ body {
 }
 body {
   min-height: 100%;
+  font-size: 62.5%;
 }
 .main {
   margin: auto;
@@ -46,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 62.5%;
 }
 .header-banner {
   border-radius: 5px;
@@ -53,15 +55,14 @@ body {
   max-width: 100%;
 }
 .nav-base {
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
   display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  width: auto;
   background-color: #349AFA;
+  color: white;
   align-items: center;
-}
-@media (max-width: 480px) {
-  .nav-base {
-    height: 75px;
-  }
 }
 .home-icon {
   cursor: pointer;
@@ -126,12 +127,13 @@ body {
   border-radius: 10px;
 }
 .card-header {
-  font-size: 35px;
+  font-size: 1.5rem;
   text-align: center;
   text-decoration: bold;
   border-bottom: 1px solid black;
 }
 .card-content {
+  font-size: 1rem;
   text-align: center;
 }
 .review-caro {
@@ -158,13 +160,13 @@ body {
   }
 }
 .m-card-header {
-  font-size: 50px;
+  font-size: 2.5rem;
   text-align: center;
   text-decoration: bold;
   border-bottom: 1px solid black;
 }
 .m-card-content {
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
 }
 .about {
@@ -178,6 +180,7 @@ body {
 }
 .footer {
   height: 50px;
+  font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
