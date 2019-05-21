@@ -6,6 +6,12 @@
   height:500px;
   background-color: @marketing-color-background;
   border-radius: 10px;
+  .MediaTablet({
+    width: 650px
+    });
+    .MediaTabletSmall({
+      min-width: 100%
+      });
 }
 .m-card-header{
   font-size: 50px;
@@ -19,6 +25,8 @@
 }
 .about{
   display: flex;
+  max-width: 100%;
+  justify-content: center;
 }
 .mini{
   display: flex;

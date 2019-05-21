@@ -38,7 +38,7 @@ body {
   padding: 0;
 }
 body {
-  height: 100%;
+  min-height: 100%;
 }
 .main {
   margin: auto;
@@ -56,6 +56,12 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   background-color: #349AFA;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .nav-base {
+    height: 75px;
+  }
 }
 .home-icon {
   cursor: pointer;
@@ -76,6 +82,11 @@ body {
   height: 100%;
   flex-direction: column;
   width: 250px;
+}
+@media (max-width: 480px) {
+  .drawerOpen {
+    min-width: 100%;
+  }
 }
 .navlist {
   font-family: 'Poppins', sans-serif;
@@ -126,6 +137,7 @@ body {
 .review-caro {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .m-card {
   margin: 20px;
@@ -134,6 +146,16 @@ body {
   height: 500px;
   background-color: #c9c9c9;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .m-card {
+    width: 650px;
+  }
+}
+@media (max-width: 700px) {
+  .m-card {
+    min-width: 100%;
+  }
 }
 .m-card-header {
   font-size: 50px;
@@ -147,6 +169,8 @@ body {
 }
 .about {
   display: flex;
+  max-width: 100%;
+  justify-content: center;
 }
 .mini {
   display: flex;
