@@ -1,34 +1,30 @@
-@import "../../less/variables.less";
-.m-card{
+@import "../less/variables.less";
+.m-card {
   margin: 20px;
   font-family: @marketing-font;
-  width:800px;
-  height:500px;
+  width: 800px;
+  height: 500px;
   background-color: @marketing-color-background;
   border-radius: 10px;
-  .MediaTablet({
-    width: 650px
-    });
-    .MediaTabletSmall({
-      min-width: 100%
-      });
+  .MediaTablet({width: 650px});
+  .MediaTabletSmall({min-width: 100%});
 }
-.m-card-header{
+.m-card-header {
   font-size: 2.5rem;
   text-align: center;
   text-decoration: bold;
   border-bottom: 1px solid black;
 }
-.m-card-content{
+.m-card-content {
   font-size: 1.5rem;
   text-align: center;
 }
-.about{
+.about {
   display: flex;
   max-width: 100%;
   justify-content: center;
 }
-.mini{
+.mini {
   display: flex;
   flex-direction: column;
 }

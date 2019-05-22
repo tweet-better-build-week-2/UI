@@ -121,7 +121,7 @@ body {
 .card {
   margin: 20px;
   font-family: 'Poppins', sans-serif;
-  width: 250px;
+  width: 100%;
   height: 150px;
   background-color: #c9c9c9;
   border-radius: 10px;
@@ -135,11 +135,6 @@ body {
 .card-content {
   font-size: 1rem;
   text-align: center;
-}
-.review-caro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .m-card {
   margin: 20px;
@@ -186,4 +181,63 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #349AFA;
+}
+.carousel-wrapper {
+  overflow: hidden;
+  max-width: 1000px;
+}
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 1000px;
+  transform-style: preserve-3d;
+}
+.left-button,
+.right-button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  overflow: visible;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.left-button::after,
+.right-button::after {
+  content: " ";
+}
+.right-button::after {
+  left: 47%;
+}
+.card.initial,
+.card.active {
+  display: block;
+  max-width: 800px;
+  opacity: 1;
+  position: relative;
+  transition: 1s;
+}
+.card.prev {
+  display: hidden;
+  width: 0;
+}
+.card.next {
+  display: hidden;
+  width: 0;
+}
+.card {
+  display: none;
+  top: 0;
+  margin: auto;
+  padding: 1rem 4rem;
+}
+p {
+  margin: 0px 8px;
 }
