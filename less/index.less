@@ -1,7 +1,6 @@
 @import "./variables";
 @import "./mixins";
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 * {
   box-sizing: border-box;
 }
@@ -10,8 +9,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+
 }
 body {
+  font-family: @marketing-font;
   min-height: 100%;
   font-size: 62.5%;
 }
@@ -28,8 +29,19 @@ body {
   margin: 20px;
   max-width: 100%;
 }
+p{
+      margin: 10px;
+}
+.aboutus{
+  min-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .MediaTabletSmall({flex-direction: column;min-width: 95%});
+}
 @import "../components/navbar/nav";
 @import "../components/card/card";
 @import "../components/mega-card/mega-card";
 @import "../components/footer/footer";
 @import "../components/slide/slide";
+@import "../components/button/button";

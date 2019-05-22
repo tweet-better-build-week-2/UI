@@ -1,9 +1,10 @@
 @import "../less/variables.less";
 .m-card {
+box-shadow: 0 8px 6px -6px black;
   margin: 20px;
   font-family: @marketing-font;
   width: 800px;
-  height: 500px;
+  min-height: 500px;
   background-color: @marketing-color-background;
   border-radius: 10px;
   .MediaTablet({width: 650px});
@@ -16,8 +17,8 @@
   border-bottom: 1px solid black;
 }
 .m-card-content {
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.25rem;
+  text-align: left;
 }
 .about {
   display: flex;

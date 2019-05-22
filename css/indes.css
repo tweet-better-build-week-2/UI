@@ -42,21 +42,6 @@ body {
   margin: 20px;
   max-width: 100%;
 }
-p {
-  margin: 10px;
-}
-.aboutus {
-  min-width: 75%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (max-width: 700px) {
-  .aboutus {
-    flex-direction: column;
-    min-width: 95%;
-  }
-}
 .nav-base {
   font-size: 1.2rem;
   display: flex;
@@ -93,15 +78,14 @@ p {
   }
 }
 .navlist {
-  text-decoration: none;
-  color: white;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   font-size: 25px;
-  border-bottom: 2px black solid;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
 }
 .navlist:hover {
   cursor: pointer;
@@ -122,22 +106,7 @@ p {
   background-color: rgba(0, 0, 0, 0);
   transition: all 0.1s ease-out;
 }
-.people {
-  margin: 25px;
-  width: 300px !important;
-  height: 500px !important;
-}
-@media (max-width: 700px) {
-  .people {
-    min-width: 100%;
-    margin: 25px 0px;
-  }
-}
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  box-shadow: 0 20px 6px -6px black;
   font-family: 'Roboto', sans-serif;
   width: 100%;
   height: 150px;
@@ -151,25 +120,14 @@ p {
   border-bottom: 1px solid black;
 }
 .card-content {
-  flex-grow: 1;
   font-size: 1rem;
   text-align: center;
-}
-.card-footer {
-  cursor: pointer;
-  border-top: 1px solid black;
-  font-size: 1rem;
-  text-align: center;
-}
-.card-footer:hover {
-  background-color: #b0b0b0;
 }
 .m-card {
-  box-shadow: 0 8px 6px -6px black;
   margin: 20px;
   font-family: 'Roboto', sans-serif;
   width: 800px;
-  min-height: 500px;
+  height: 500px;
   background-color: #c9c9c9;
   border-radius: 10px;
 }
@@ -190,8 +148,8 @@ p {
   border-bottom: 1px solid black;
 }
 .m-card-content {
-  font-size: 1.25rem;
-  text-align: left;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .about {
   display: flex;
@@ -271,21 +229,4 @@ p {
 }
 p {
   margin: 0px 8px;
-}
-.button {
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  width: 200px;
-  height: 23px;
-  border-radius: 5px;
-  background-size: 200% 100%;
-  background-image: linear-gradient(to left, #495EF5 50%, #349AFA 50%);
-  -webkit-transition: background-position 1s;
-  -moz-transition: background-position 1s;
-  transition: background-position 1s;
-}
-.button:hover {
-  background-position: -100% 0%;
 }
