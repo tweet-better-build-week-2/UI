@@ -1,8 +1,6 @@
 class Carousel {
   constructor(cElement) {
     this.cElement = cElement;
-    this.leftButton = this.cElement.querySelector(".left-button");
-    this.rightButton = this.cElement.querySelector(".right-button");
     this.itemClassName = "card";
     this.images = cElement.getElementsByClassName(this.itemClassName);
     this.timg = Array.from(this.images).length;
@@ -11,8 +9,7 @@ class Carousel {
     this.images[this.timg - 1].classList.add("prev");
     this.images[0].classList.add("active");
     this.images[1].classList.add("next");
-    this.rightButton.addEventListener("click", this.moveNext);
-    this.leftButton.addEventListener("click", this.movePrev);
+    setInterval(this.moveNext, 5000);
   }
   moveNext = () => {
     console.log(this.moving);

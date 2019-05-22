@@ -119,7 +119,6 @@ body {
   transition: all 0.1s ease-out;
 }
 .card {
-  margin: 20px;
   font-family: 'Poppins', sans-serif;
   width: 100%;
   height: 150px;
@@ -209,34 +208,36 @@ body {
   border: 1px solid black;
   border-radius: 10px;
 }
-.left-button::after,
-.right-button::after {
-  content: " ";
-}
-.right-button::after {
-  left: 47%;
-}
 .card.initial,
 .card.active {
-  display: block;
-  max-width: 800px;
+  display: block !important;
+  transition: width 0.5s ease-out;
+  width: 250px;
   opacity: 1;
   position: relative;
-  transition: 1s;
 }
 .card.prev {
-  display: hidden;
-  width: 0;
+  transition: width 0.5s ease-out;
+  width: 0px;
+  font-size: 0;
+  overflow: hidden;
+}
+.card.prev .card-header,
+.card.prev .card-content {
+  visibility: hidden;
 }
 .card.next {
-  display: hidden;
-  width: 0;
+  transition: width 0.5s ease-out;
+  width: 0px;
+  overflow: hidden;
+}
+.card.next .card-header,
+.card.next .card-content {
+  visibility: hidden;
 }
 .card {
-  display: none;
-  top: 0;
-  margin: auto;
-  padding: 1rem 4rem;
+  width: 0px;
+  overflow: hidden;
 }
 p {
   margin: 0px 8px;
