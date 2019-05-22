@@ -1,32 +1,35 @@
-@import './variables';
-@import './mixins';
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
+@import "./variables";
+@import "./mixins";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
 
 * {
   box-sizing: border-box;
 }
 
-html, body { 
+html,
+body {
   margin: 0;
   padding: 0;
 }
 body {
-  height: 100%;
+  min-height: 100%;
+  font-size: 62.5%;
 }
-.main{
+.main {
   margin: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  font-size: 62.5%;
 }
-.header-banner{
+.header-banner {
   border-radius: 5px;
   margin: 20px;
-  max-width: 100%
+  max-width: 100%;
 }
-@import '../components/navbar/nav';
-@import '../components/card/card';
-@import '../components/mega-card/mega-card';
-@import '../components/footer/footer';
+@import "../components/navbar/nav";
+@import "../components/card/card";
+@import "../components/mega-card/mega-card";
+@import "../components/footer/footer";
+@import "../components/slide/slide";

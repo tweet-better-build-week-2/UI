@@ -1,8 +1,16 @@
 @import "../../less/variables.less";
 .nav-base{
-  font-family: @marketing-font;
-  display: flex;
-  background-color: @marketing-color-nav;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    width: auto;
+    background-color: #349AFA;
+    color:white;
+  .MediaPhone({
+
+    });
+    align-items: center;
 }
 .home-icon{
   cursor: pointer;
@@ -25,6 +33,9 @@
   height: 100%;
   flex-direction: column;
   width: 250px;
+  .MediaPhone({
+    min-width: 100%
+  })
 }
 
 .navlist{
