@@ -133,10 +133,16 @@ p {
     margin: 25px 0px;
   }
 }
+.team {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
 .card {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  align-items: center;
   box-shadow: 0 20px 6px -6px black;
   font-family: 'Roboto', sans-serif;
   width: 100%;
@@ -148,7 +154,9 @@ p {
   font-size: 1.5rem;
   text-align: center;
   text-decoration: bold;
+  background-color: #349AFA;
   border-bottom: 1px solid black;
+  width: 100%;
 }
 .card-content {
   flex-grow: 1;
@@ -162,6 +170,7 @@ p {
   border-top: 1px solid black;
   font-size: 1rem;
   text-align: center;
+  width: 100%;
 }
 .card-footer:hover {
   background-color: #b0b0b0;
@@ -187,6 +196,7 @@ p {
 }
 .m-card-header {
   font-size: 2.5rem;
+  background-color: #349AFA;
   text-align: center;
   text-decoration: bold;
   border-bottom: 1px solid black;
