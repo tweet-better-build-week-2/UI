@@ -84,4 +84,4 @@ class Carousel {
 
 let carousel = document.querySelectorAll(".carousel");
 console.log(carousel);
-Array.from(carousel).forEach(el => new Carousel(el));
+Array.from(carousel).map(el => new Carousel(el));
